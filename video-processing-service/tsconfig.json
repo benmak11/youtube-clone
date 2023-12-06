@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "rootDir": "src", // src code for running code
+        "outDir": "dist", // destination output folder
+        "strict": true, // type checking
+        "esModuleInterop": true
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+}
