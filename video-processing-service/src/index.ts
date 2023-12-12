@@ -19,7 +19,7 @@ app.post("/process-video", (req, res) => {
             res.status(200).send("Video processing finished successfully.");
         })
         .on("error", (err) => {
-            console.log(`An error has occureed`);
+            console.log(`An error has occureed.`);
             res.status(500).send(`Internal Server Error: ${err.message}`);
         })
         .save(outputFilePath);
@@ -27,5 +27,5 @@ app.post("/process-video", (req, res) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log(`video processing server is running at http://localhost:${port}`);
+    console.log(`The Video Processing Server is running at http://localhost:${port}`);
 });
