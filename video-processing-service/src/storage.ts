@@ -74,7 +74,7 @@ export async function uploadProcessedVideo(fileName: string) {
         `gs://${localProcessedVideoPath}/${fileName} downloaded to ${processedVideoBucketName}/${fileName}.`
     );
 
-    await bucket.file(fileName).makePublic();
+    await bucket.file(fileName).makePublic(); // specied that the file is now made public from the CDN bucket
 }
 
 /**
